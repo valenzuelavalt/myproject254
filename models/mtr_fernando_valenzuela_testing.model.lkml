@@ -135,7 +135,7 @@ explore: orders {
     relationship: many_to_one
   }
 }
-
+explore: order_items_dt {}
 explore: order_items {
   join: orders {
     type: left_outer
