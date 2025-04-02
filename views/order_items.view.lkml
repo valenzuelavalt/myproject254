@@ -1,5 +1,6 @@
 view: order_items {
-  sql_table_name: demo_db.order_items ;;
+  # sql_table_name: demo_db.order_items ;;
+  sql_table_name: `${order_items_dt.SQL_TABLE_NAME}`;;
   drill_fields: [id]
 
   dimension: id {
