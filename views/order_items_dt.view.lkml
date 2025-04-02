@@ -1,6 +1,8 @@
 view: order_items_dt {
     derived_table: {
       sql: SELECT * from demo_db.order_items ;;
+      persist_for: "24 hours"
+      indexes: ["id"]
     }
     drill_fields: [id]
     dimension: id {
