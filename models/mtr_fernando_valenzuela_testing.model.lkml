@@ -4,7 +4,7 @@ connection: "thelook"
 include: "/views/**/*.view.lkml"
 
 datagroup: mtr_fernando_valenzuela_testing_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  sql_trigger: SELECT EXTRACT(hour from CURRENT_DATE());;
   max_cache_age: "1 hour"
 }
 
